@@ -7,17 +7,18 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Img/favicon-16x16.png" type="image/x-icon">
     <title>Netiflix</title>
 </head>
 
 <body>
 
-    <nav>
+    <nav id="nav">
         <img class="logo" src="Img/Logonetflix-removebg-preview.png"></img>
 
         <ul class="menu_esquerdo">
-            <li>Ínicio</li>
-            <li>Series</li>
+            <li>Início</li>
+            <li>Séries</li>
             <li>Filmes</li>
             <li>Bombando</li>
             <li>Minha Lista</li>
@@ -70,21 +71,68 @@
         </div>
         <div class="desvanecer"></div>
     </header>
-    
 
-    <div class="blocos">
-        <h3>Recomendados</h3>
-        <div class="quadros">
-            <img class=" quadro quadro_1" src="Img/img1.jpg">
-            <img class=" quadro quadro_1" src="Img/img11.jpg">
-            <img class=" quadro quadro_1" src="Img/img12.jpg">
-            <img class=" quadro quadro_1" src="Img/img13.jpg">
-            <img class=" quadro quadro_1" src="Img/imagem16.jpeg">
-            <img class=" quadro quadro_1" src="Img/img14.jpg">
-            <img class=" quadro quadro_1" src="Img/img15.jpg">
+    <section>
+        <div class="blocos">
+            <h3>Recomendados</h3>
+
+            <div class="quadros">
+                <img class=" quadro quadro_1" src="Img/img1.jpg">
+                <img class=" quadro quadro_1" src="Img/img11.jpg">
+                <img class=" quadro quadro_1" src="Img/img12.jpg">
+                <img class=" quadro quadro_1" src="Img/img13.jpg">
+                <img class=" quadro quadro_1" src="Img/imagem16.jpeg">
+                <img class=" quadro quadro_1" src="Img/img14.jpg">
+                <img class=" quadro quadro_1" src="Img/img15.jpg">
+            </div>
+        </div>
+    </section>
+
+    <div class="fileira">
+        <div class="blocos">
+            <h3>Em Alta</h3>
+
+            <div class="quadros">
+                <img class=" quadro quadro_1" src="Img/img2.jpg">
+                <img class=" quadro quadro_1" src="Img/img17.jpeg">
+                <img class=" quadro quadro_1" src="Img/img18.jpeg">
+                <img class=" quadro quadro_1" src="Img/img19.jpeg">
+                <img class=" quadro quadro_1" src="Img/img20.jpeg">
+                <img class=" quadro quadro_1" src="Img/img3.jpg">
+                <img class=" quadro quadro_1" src="Img/img21.jpeg">
+            </div>
         </div>
     </div>
 
+    <div class="fileira2">
+        <div class="blocos">
+            <h3>Favoritos conhecidos</h3>
+
+            <div class="quadros">
+                <img class=" quadro quadro_1" src="Img/img4.jpg">
+                <img class=" quadro quadro_1" src="Img/img5.jpg">
+                <img class=" quadro quadro_1" src="Img/img6.jpg">
+                <img class=" quadro quadro_1" src="Img/img7.jpg">
+                <img class=" quadro quadro_1" src="Img/img8.jpg">
+                <img class=" quadro quadro_1" src="Img/img9.jpg">
+                <img class=" quadro quadro_1" src="Img/img21.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY>=100){
+                nav.classList.add('nav_black');
+            }else{
+                nav.classList.remove('nav_black');
+            }
+
+        })
+
+    </script>
 
 </body>
 
