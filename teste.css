@@ -1,0 +1,44 @@
+
+.perfils{
+    position: absolute;
+    width: 12%;
+    object-fit: contain;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 999;
+
+}
+
+.outros{
+    width: 25px;
+    border-radius: 3px;
+    object-fit: contain;
+    
+}
+
+.list{
+    display: flex;
+    margin-left: 10px;
+    height: 30px;
+    align-items: center;
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.exit:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.exit{
+    margin-left: 45px;
+}

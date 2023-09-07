@@ -51,14 +51,17 @@ header{
 
 }
 
+.menu_esquerdo li:hover{
+    color:  rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+}
+
 .menu_direito{
     list-style: none;
     width: 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    margin-right: 35px;
-    margin-left: 5%;
     color: #fff;
     cursor: pointer;
 }
@@ -81,15 +84,30 @@ video {
     color: #fff;
     border:none;
     font-weight: none;
-    border-radius: 8px;
+    border-radius: 3px;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(105, 95, 95, 0.5);
     font-size: 20px;
 
+}
+
+.button1{
+    color: #111;
+    background-color: #fff;
+}
+
+.button1:hover{
+    background-color: rgba(251, 251, 251, 0.5);
+    transition: 0.5s;
+}
+
+.button2:hover{
+    background-color: rgba(39, 39, 39, 0.5);
+    transition: 0.2s;
 }
 
 .banner_info{
@@ -151,15 +169,17 @@ video {
     object-fit: contain;
     max-width: 260px;
     margin-right: 10px;
+    border-radius: 3px;
 
 }
 
 .quadro:hover{
     transform: scale(1.3);
+    
 }
 .quadros{
     display: flex;
-    overflow-x: scroll; /*fara com que traga um scroll horisontal*/
+    overflow-x: scroll; /*fara com que traga um scroll horizontal*/
     padding: 20px;
     
 }
@@ -212,3 +232,5 @@ video {
 .nav_black{
     background-color: #111;
 }
+
+
